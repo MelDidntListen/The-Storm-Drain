@@ -115,6 +115,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         {
             transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
         }
+
     }
 
     private void StateHandler()
