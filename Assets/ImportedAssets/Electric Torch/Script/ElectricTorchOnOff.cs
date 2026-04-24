@@ -35,7 +35,7 @@ public class ElectricTorchOnOff : MonoBehaviour
 
 	private void Awake()
     {
-		_batteryPower = FindObjectOfType<BatteryPowerPickup>();
+		_batteryPower = Object.FindFirstObjectByType<BatteryPowerPickup>();
 	}
     void Start()
 	{
