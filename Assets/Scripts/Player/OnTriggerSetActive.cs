@@ -2,7 +2,10 @@ using UnityEngine;
 
 public class OnTriggerSetActive : MonoBehaviour
 {
-    public GameObject audioObject;
+    [SerializeField] private SoundType sound;
+    [SerializeField, Range(0,1)] private float volume = 1;
+
+    /*public GameObject audioObject;*/
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,16 +20,19 @@ public class OnTriggerSetActive : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            audioObject.SetActive(true);
+            AudioManager.PlaySound(sound, volume);
+            /*audioObject.SetActive(true);*/
             Debug.Log("Player has entered the collider");
+            this.gameObject.SetActive(false);
         }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")
         {
-            audioObject.SetActive(false);
+            /*audioObject.SetActive(false);*/
             Debug.Log("Player has exited the collider");
+        
         }
     }
 }
