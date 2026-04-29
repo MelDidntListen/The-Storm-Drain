@@ -17,7 +17,7 @@ public class PlayerFootsteps : MonoBehaviour
     {
         while (true)
         {
-            if (movement.moveSpeed > 0.1f && movement.grounded)
+            if (movement.CurrentSpeed > 0.1f && movement.IsGrounded)
             {
                 AudioManager.PlaySound(SoundType.stepConcrete, 0.5f);
             }

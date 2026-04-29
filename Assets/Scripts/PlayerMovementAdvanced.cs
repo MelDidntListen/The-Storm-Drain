@@ -32,6 +32,8 @@ public class PlayerMovementAdvanced : MonoBehaviour
     public float playerHeight;
     public LayerMask whatIsGround;
     public bool grounded;
+    public float CurrentSpeed => moveSpeed;
+    public bool IsGrounded => grounded;
 
     [Header("Slope Handling")]
     public float maxSlopeAngle;
