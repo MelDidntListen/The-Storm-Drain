@@ -6,7 +6,7 @@ using TMPro;
 public class PlayerMovementAdvanced : MonoBehaviour
 {
     [Header("Movement")]
-    private float moveSpeed;
+    public float moveSpeed;
     public float walkSpeed;
     public float sprintSpeed;
 
@@ -31,7 +31,9 @@ public class PlayerMovementAdvanced : MonoBehaviour
     [Header("Ground Check")]
     public float playerHeight;
     public LayerMask whatIsGround;
-    bool grounded;
+    public bool grounded;
+    public float CurrentSpeed => moveSpeed;
+    public bool IsGrounded => grounded;
 
     [Header("Slope Handling")]
     public float maxSlopeAngle;
@@ -174,7 +176,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         rb.useGravity = !OnSlope();
     }
 
-    private void SpeedControl()
+    public void SpeedControl()
     {
         // limiting speed on slope
         if (OnSlope() && !exitingSlope)
