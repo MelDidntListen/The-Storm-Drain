@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 public class OnTriggerLoadScene : MonoBehaviour
@@ -17,7 +18,6 @@ public class OnTriggerLoadScene : MonoBehaviour
         _instantiatedPrefabs.Add(instance);
     }
 
-    
     void OnTriggerEnter(Collider other)
     {
         print ("Load Trigger entered by: " + other.name);
