@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2270166475751068405}
   - component: {fileID: 2453227276355815410}
   - component: {fileID: 6731496971908716214}
-  - component: {fileID: 1795519172759943099}
+  - component: {fileID: 8258036855415001839}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -114,7 +114,7 @@ MonoBehaviour:
   sensX: 1500
   sensY: 1500
   orientation: {fileID: 8053470438746200730}
---- !u!114 &1795519172759943099
+--- !u!114 &8258036855415001839
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -379,6 +379,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4549548964616840790}
     m_Modifications:
+    - target: {fileID: 4104838465022895663, guid: bdeb0d2a354fb40b0bca64b3dc4b7147, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6982
+      objectReference: {fileID: 0}
+    - target: {fileID: 4104838465022895663, guid: bdeb0d2a354fb40b0bca64b3dc4b7147, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4171548956737551022, guid: bdeb0d2a354fb40b0bca64b3dc4b7147, type: 3}
+      propertyPath: crouchSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4171548956737551022, guid: bdeb0d2a354fb40b0bca64b3dc4b7147, type: 3}
+      propertyPath: crouchYScale
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 5531425805120832742, guid: bdeb0d2a354fb40b0bca64b3dc4b7147, type: 3}
       propertyPath: m_Name
       value: Player
@@ -386,6 +402,14 @@ PrefabInstance:
     - target: {fileID: 5531425805120832742, guid: bdeb0d2a354fb40b0bca64b3dc4b7147, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6442151261932877485, guid: bdeb0d2a354fb40b0bca64b3dc4b7147, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6472652869061959964, guid: bdeb0d2a354fb40b0bca64b3dc4b7147, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7681534234796035112, guid: bdeb0d2a354fb40b0bca64b3dc4b7147, type: 3}
       propertyPath: m_TagString
@@ -514,6 +538,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7021590931246295734, guid: c49cd3761459cf1459d82af56a835b4e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2097975043167267021}
+    - targetCorrespondingSourceObject: {fileID: 7904057512449899626, guid: c49cd3761459cf1459d82af56a835b4e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 270863977170119511}
   m_SourcePrefab: {fileID: 100100000, guid: c49cd3761459cf1459d82af56a835b4e, type: 3}
 --- !u!1 &1161854467122568038 stripped
 GameObject:
@@ -540,3 +567,31 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7654539451631824908, guid: c49cd3761459cf1459d82af56a835b4e, type: 3}
   m_PrefabInstance: {fileID: 8173487710737052112}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2080335006417669562 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7904057512449899626, guid: c49cd3761459cf1459d82af56a835b4e, type: 3}
+  m_PrefabInstance: {fileID: 8173487710737052112}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &270863977170119511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080335006417669562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
