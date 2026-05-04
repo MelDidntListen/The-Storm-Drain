@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 public class OnTriggerLoadScene : MonoBehaviour
@@ -17,13 +18,13 @@ public class OnTriggerLoadScene : MonoBehaviour
         _instantiatedPrefabs.Add(instance);
     }
 
-    
     void OnTriggerEnter(Collider other)
     {
-        print ("Trigger entered by: " + other.name);
+        print ("Load Trigger entered by: " + other.name);
         if (other.CompareTag("Player"))
         {
             InstantiatePrefab();
+            Destroy(gameObject);
         }
     }
 }

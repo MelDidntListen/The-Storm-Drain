@@ -10,7 +10,7 @@ public class MainMenuManager : MonoBehaviour
 
     [Header("Scenes to Load")]
     [SerializeField] private SceneField _persistentGameplay;
-    [SerializeField] private SceneField _levelScene; 
+    //[SerializeField] private SceneField _levelScene; 
 
     private List<AsyncOperation> _scenesToLoad = new List<AsyncOperation>();
     public void StartGame()
@@ -20,7 +20,7 @@ public class MainMenuManager : MonoBehaviour
 
         //start loading the scene we need
         _scenesToLoad.Add(SceneManager.LoadSceneAsync(_persistentGameplay));
-        _scenesToLoad.Add(SceneManager.LoadSceneAsync(_levelScene, LoadSceneMode.Additive));
+        //_scenesToLoad.Add(SceneManager.LoadSceneAsync(_levelScene, LoadSceneMode.Additive));
 
     }
     private void HideMenu()
