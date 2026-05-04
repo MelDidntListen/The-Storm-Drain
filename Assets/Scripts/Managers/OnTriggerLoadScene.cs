@@ -1,14 +1,29 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class OnTriggerLoadScene : MonoBehaviour
 {
-    [SerializeField] string SceneIndex;
+    [Header("Prefabs to Instantiate")]
+    [SerializeField] private GameObject _prefabToLoad;
+    // [Header("Prefabs to Destroy")]
+    // [SerializeField] private GameObject _prefabToDestroy;
+
+    public List<GameObject> _instantiatedPrefabs = new List<GameObject>();
+    
+    public void InstantiatePrefab()
+    {
+        //instantiate the prefab
+        GameObject instance = Instantiate(_prefabToLoad);
+        _instantiatedPrefabs.Add(instance);
+    }
+
+    
     void OnTriggerEnter(Collider other)
     {
+        print ("Trigger entered by: " + other.name);
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneIndex);
+            InstantiatePrefab();
         }
     }
 }
