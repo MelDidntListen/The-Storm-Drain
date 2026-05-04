@@ -20,10 +20,11 @@ public class OnTriggerLoadScene : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
     {
-        print ("Trigger entered by: " + other.name);
+        print ("Load Trigger entered by: " + other.name);
         if (other.CompareTag("Player"))
         {
             InstantiatePrefab();
+            Destroy(gameObject);
         }
     }
 }
