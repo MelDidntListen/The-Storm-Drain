@@ -1600,9 +1600,6 @@ MonoBehaviour:
   _persistentGameplay:
     m_SceneAsset: {fileID: 102900000, guid: 8d6dfdd12d0fb4e0ca9f96db2abb8d74, type: 3}
     m_SceneName: PersistentGameplay
-  _levelScene:
-    m_SceneAsset: {fileID: 102900000, guid: 3a0eefb9355e64f8a9a5973668c3131a, type: 3}
-    m_SceneName: DrainOutside
 --- !u!4 &2054594300
 Transform:
   m_ObjectHideFlags: 0
@@ -1645,14 +1642,14 @@ RectTransform:
   m_GameObject: {fileID: 2103204148}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7.506883, y: 4.5453625, z: 4.2247076}
+  m_LocalScale: {x: 17.792814, y: 10.773417, z: 10.013402}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 510107940}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.4, y: -0.40829468}
+  m_AnchoredPosition: {x: -1.4, y: -0.40833}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2103204150
